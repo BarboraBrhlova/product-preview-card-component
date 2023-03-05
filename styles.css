@@ -1,0 +1,147 @@
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center; 
+}
+
+p {
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    font-size: 1.125rem;
+}
+
+.perfumeTitle {
+    letter-spacing: 0.5rem;
+}
+
+h1 {
+    font-family: "Fraunces";
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 800px;
+    justify-content: center;
+    display: flex;
+}
+
+.text {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
+    border-radius: 0 1.5em 1.5em 0;
+    display: inline-block;
+    width: 400px;
+}
+
+.desktopImg {
+    width: 400px;
+    display: inline-block;
+    border-radius: 1.5em 0 0 1.5em;
+}
+
+.mobileImg {
+    display: none;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-size: 2.5rem;
+}
+
+.price {
+    padding-left: 1.4rem;
+    padding-top: 1.3rem;
+}
+ 
+.sale {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: "Montserrat";
+    white-space: nowrap;
+    padding: 1rem 6.5rem;
+    border-radius: 10px;
+    margin-top: 1.6rem;
+}
+
+button:active {
+    background-color: hsl(158, 36%, 37%);
+    filter: brightness(85%);
+  }
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1000px) {
+    
+    .container {
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mobileImg {
+        display: inline-block;
+        width: 300px;
+        border-radius: 0.75em 0.75em 0 0;
+        margin-left: -0.75rem;
+    }
+
+    .text {
+        display: inline-block;
+        width: 300px;
+        border-radius: 0 0 0.75em 0.75em;
+        padding: 7%;
+    }
+
+    .desktopImg {
+        display: none;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .perfumeTitle {
+        letter-spacing: 0.3rem;
+    }
+
+    h1 {
+    padding-bottom: 0.5rem;
+    font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .price {
+        padding-left: 0.7rem;
+        padding-top: 0.65rem;
+    }
+     
+    .sale {
+        padding-top: 0.8rem;
+        padding-right: 4rem;
+        text-align: center;
+    }
+
+    button {
+        padding: 0.7rem 5rem;
+        border-radius: 5px;
+        margin-top: 0.8rem;
+        font-size: 0.7rem;
+    }
+}
